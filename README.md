@@ -1,6 +1,10 @@
-# Frontend Template
+# 📌Frontend Template
 
 このリポジトリは、Next.js App Router を使用したフロントエンドテンプレートです。
+
+## 🛠 セットアップ方法
+pnpm install
+pnpm dev
 
 ## 📂 ディレクトリ構造
 ````plaintext
@@ -54,6 +58,10 @@ frontend-template/
 │── next.config.js     # Next.js の設定
 └── README.md          # プロジェクト概要
 
+---
+
+この内容で `README.md` を作れば、ディレクトリ構造がコードブロック形式で綺麗に表示されます！  
+作成してみて、調整したい点があれば教えてください👍
 next.js app router 
 jest
 msw
