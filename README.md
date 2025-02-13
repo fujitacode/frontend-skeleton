@@ -69,4 +69,3 @@ playwrite
 huskeyでe2eテスト
 
 scaffdog
-storybook
