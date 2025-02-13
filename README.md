@@ -1,14 +1,14 @@
-# 📌Frontend Skeleton
+# Frontend Skeleton
 
 このリポジトリは、Next.js App Router を使用したフロントエンドテンプレートです。
 
-## 🛠 セットアップ方法
+## セットアップ方法
 ````plaintext
 pnpm install
 pnpm dev
 ````
 
-## 📂 ディレクトリ構造
+## ディレクトリ構造
 ````plaintext
 frontend-skeleton/
 │── public/            # 静的ファイル（画像, アイコン など）
