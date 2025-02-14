@@ -64,7 +64,6 @@ frontend-skeleton/
 この内容で `README.md` を作れば、ディレクトリ構造がコードブロック形式で綺麗に表示されます！  
 作成してみて、調整したい点があれば教えてください👍
 jest
-msw
 playwrite
 huskeyでe2eテスト
 
