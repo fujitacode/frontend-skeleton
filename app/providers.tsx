@@ -1,12 +1,12 @@
 "use client"; // クライアントコンポーネント
 
-import { useEffect } from "react";
 import { makeServer } from "@/lib/mocks/mirage";
+import { useEffect } from "react";
 
 export function MirageProvider({ children }: { children: React.ReactNode }) {
-  useEffect(() => {
-    makeServer();
-  }, []);
+	useEffect(() => {
+		makeServer();
+	}, []);
 
-  return <>{children}</>;
+	return <>{children}</>;
 }
