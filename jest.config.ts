@@ -20,6 +20,9 @@ const customJestConfig: Config = {
 	moduleNameMapper: {
 		"^@/(.*)$": "<rootDir>/$1",
 	},
+	// カバレッジレポートの出力先を指定
+	coverageDirectory: "reports/jest-coverage", // カバレッジレポートの出力先
+	collectCoverage: true, // カバレッジを収集する
 };
 
 export default createJestConfig(customJestConfig);
