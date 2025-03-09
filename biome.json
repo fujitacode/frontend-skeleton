@@ -14,7 +14,8 @@
 			"playwright/",
 			".next/",
 			"public/",
-			"dist/"
+			"dist/",
+			"reports/"
 		]
 	},
 	"formatter": {

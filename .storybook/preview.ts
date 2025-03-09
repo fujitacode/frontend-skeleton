@@ -1,23 +1,19 @@
 import type { Preview } from "@storybook/react";
-import { initialize, mswLoader } from "msw-storybook-addon";
-import { handlers } from "../lib/mocks/handlers";
+import { makeServer } from "../lib/mocks/mirage";
 import "../app/globals.scss";
 
-initialize();
+// MirageJS を Storybook でも適用
+makeServer();
 
 const preview: Preview = {
-  parameters: {
-    msw: {
-      handlers,
-    },
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
-    },
-  },
-  loaders: [mswLoader],
+	parameters: {
+		controls: {
+			matchers: {
+				color: /(background|color)$/i,
+				date: /Date$/i,
+			},
+		},
+	},
 };
 
 export default preview;

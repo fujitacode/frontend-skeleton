@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 
 type TestProps = {
-  label: string;
 	color?: "primary" | "secondary";
 };
 
@@ -11,7 +10,7 @@ const Test: React.FC<TestProps> = ({ color = "primary" }) => {
 	const [message, setMessage] = useState("Loading...");
 
 	useEffect(() => {
-		fetch("https://example.com/api/data")
+		fetch("/api/data")
 			.then((res) => res.json())
 			.then((data) => setMessage(data.message))
 			.catch(() => setMessage("Failed to fetch data"));

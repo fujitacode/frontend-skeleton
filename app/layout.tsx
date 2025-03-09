@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
-
-if (process.env.NEXT_PUBLIC_API_MOCKING === "enabled") {
-	require("../lib/mocks");
-}
+import { MirageProvider } from "./providers";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -31,7 +28,7 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				{children}
+				<MirageProvider>{children}</MirageProvider>
 			</body>
 		</html>
 	);
