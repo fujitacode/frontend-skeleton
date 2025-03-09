@@ -60,3 +60,5 @@ frontend-skeleton/
 │── next.config.js     # Next.js の設定
 └── README.md          # プロジェクト概要
 ````
+
+状態管理ライブラリを追加予定。
